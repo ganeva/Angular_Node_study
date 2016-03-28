@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body ng-app="todo" ng-controller="todoController as todoCtrl">
+    <ul>
+        <li ng-repeat="item in todoCtrl.items">
+            {{item.name}}
+        </li>
+    </ul>
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
